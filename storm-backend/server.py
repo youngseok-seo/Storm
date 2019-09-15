@@ -3,9 +3,17 @@ from flask_cors import CORS
 from flask_socketio import SocketIO, emit
 
 app = Flask(__name__)
-socketio = SocketIO(app)
-CORS(app)
 
+app.config['SECRET_KEY'] = 'some-super-secret-key'
+app.config['DEFAULT_PARSERS'] = [
+    'flask.ext.api.parsers.JSONParser',
+    'flask.ext.api.parsers.URLEncodedParser',
+    'flask.ext.api.parsers.FormParser',
+    'flask.ext.api.parsers.MultiPartParser'
+]
+
+cors = CORS(app,resources={r"/*":{"origins":"*"}})
+socketio = SocketIO(app)
 
 @app.route('/create', methods=["POST"])
 def send_socket():
@@ -33,4 +41,4 @@ def send_socket():
 
 
 if __name__ == '__main__':
-    socketio.run(app)
+    socketio.run(app,port=5000)

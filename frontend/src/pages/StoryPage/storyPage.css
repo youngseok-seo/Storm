@@ -5,6 +5,9 @@
     height: 100%;
 
     background: whitesmoke;
+
+    align-content: center;
+    align-items: center;
 }
 
 .storyPage .button{
@@ -16,7 +19,12 @@
     margin-right: auto;
     margin-left: auto;
 
-    margin-top: 500px;
+    margin: 20px;
+}
 
+.storyPage .image{
+    width: 550px;
+    height: auto;
 
+    margin: 20px;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './storyPage.css';
 
 import IconView from '../../components/UI/IconView';
@@ -6,16 +6,54 @@ import { LinkButtonView } from '../../components/UI/ButtonView';
 
 import openSocket from 'socket.io-client';
 
-const socket = openSocket('http://b56a6d0c.ngrok.io');
+import FirstScene from '../../scene0.png';
+import SecondScene from '../../scene1.png';
+import ThirdScene from '../../scene2.jpg';
+import FourthScene from '../../scene3.jpg';
+import FifthScene from '../../scene4.jpg';
+import SixthScene from '../../scene5.jpg';
+import SeventhScene from '../../scene6.jpg';
 
-socket.on('add_object', data => {
-    console.log(data)
-})
+const socket = openSocket('http://localhost:3001');
 
-const StoryPage = () => {
+const StoryPage = ({}) => {
+    const [image, setImage] = useState(FirstScene)
+
+    socket.on('object_name', data => {
+        console.log(data)
+        
+        if (data === "hack the north")
+        {
+            setImage(SecondScene)
+        }
+        if (data === "evil goose")
+        {
+            setImage(ThirdScene)
+        }
+        if (data === "coding project")
+        {
+            setImage(FourthScene)
+        }
+        if (data === "three boys and one girl")
+        {
+            setImage(FifthScene)
+        }
+        if (data === "prizes")
+        {
+            setImage(SixthScene)
+        }
+        if (data === "amazon echo's")
+        {
+            setImage(SeventhScene)
+        }
+
+        console.log(data)
+    })
+
     return(
         <div className='storyPage'>
             <IconView/>
+            <img className='image' src={image}/>
             <div className='button'>
                 <LinkButtonView to='/home'>
                     Back to Home
