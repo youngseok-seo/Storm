@@ -19,12 +19,11 @@
     margin-right: auto;
     margin-left: auto;
 
-    margin: 20px;
+    margin-top: 40px;
 }
 
 .storyPage .image{
     width: 550px;
     height: auto;
-
-    margin: 20px;
+    margin-top: 40px;
 }

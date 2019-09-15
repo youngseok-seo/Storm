@@ -26,28 +26,26 @@ const StoryPage = ({}) => {
         {
             setImage(SecondScene)
         }
-        if (data === "evil goose")
+        else if (data === "evil goose")
         {
             setImage(ThirdScene)
         }
-        if (data === "coding project")
+        else if (data === "coding project")
         {
             setImage(FourthScene)
         }
-        if (data === "three boys and one girl")
+        else if (data === "three boys and one girl")
         {
             setImage(FifthScene)
         }
-        if (data === "prizes")
+        else if (data === "prizes")
         {
             setImage(SixthScene)
         }
-        if (data === "amazon echo's")
+        else if (data === "amazon echos")
         {
             setImage(SeventhScene)
         }
-
-        console.log(data)
     })
 
     return(

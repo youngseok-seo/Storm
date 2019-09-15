@@ -5,8 +5,8 @@ var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 
 app.post('/create', (req, res) => {
-    object_names = ["hack the north", "evil goose", "coding project", "three boys and one girl", "prizes", "amazon echo's"]
-    object_name = req.query['object_name']
+    object_names = ["hack the north", "evil goose", "coding project", "three boys and one girl", "prizes", "amazon echos"]
+    object_name = req.query['object_name'].toLowerCase()
 
     var index_current = object_names.indexOf(object_name)
 
