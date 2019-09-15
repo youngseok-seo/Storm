@@ -3,4 +3,8 @@
 
 #### Created at Hack the North 2019
 
-![Alt text] (./images/Landing Page?raw=true)
+![Alt text](./images/Landing Page.png?raw=true)
+![Alt text](./images/Home Page.png?raw=true)
+![Alt text](./images/Create Page.png?raw=true)
+![Alt text](./images/Read Page.png?raw=true)
+
