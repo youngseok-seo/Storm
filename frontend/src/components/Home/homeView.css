@@ -1,0 +1,17 @@
+.homeView{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.homeView .buttons{
+    height: 400px;
+    width: 300px;
+
+    align-content: center;
+    line-height: 400px;
+
+    text-align: center;
+}

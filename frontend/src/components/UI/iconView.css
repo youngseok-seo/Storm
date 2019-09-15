@@ -1,0 +1,35 @@
+.iconView{
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    align-items: center;
+
+    
+
+}
+
+.iconView .icon{
+    align-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100px;
+    width: auto;
+    
+    transform: scale(20%);
+
+    margin-top: 20px;
+
+}
+
+.iconView .logo{
+    text-align: center;
+
+    color: #f7b239;
+
+    font-family: "Comfortaa", semi-bold;
+    font-weight: 600;
+    font-size: 30px;
+}

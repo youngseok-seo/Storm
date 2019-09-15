@@ -1,0 +1,24 @@
+.landingLogo{
+    text-align: center;
+    
+    color: #f7b239;
+    
+    font-family: "Comfortaa", semi-bold;
+    font-weight: 600;
+    font-size: 100px;
+
+    width: 100%;
+    margin-top: auto;
+
+    align-content: center;
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.landingLogo + .buttonView {
+    height: 72px;
+    width: 250px;
+    margin: 39px;
+}
