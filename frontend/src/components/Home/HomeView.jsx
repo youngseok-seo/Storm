@@ -2,7 +2,6 @@ import React from 'react';
 import './homeView.css';
 
 import {LinkButtonView} from '../UI/ButtonView';
-import IconView from '../UI/IconView';
 
 const HomeView = () => (
     <div className='homeView'>
