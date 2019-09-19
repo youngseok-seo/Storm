@@ -23,7 +23,22 @@
 }
 
 .storyPage .image{
+
     width: 550px;
     height: auto;
+    
     margin-top: 40px;
+
+    animation: 2s appear; 
 }
+
+@keyframes appear {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+
