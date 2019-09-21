@@ -18,9 +18,12 @@ const socket = openSocket('http://localhost:3001');
 
 const StoryPage = ({}) => {
     const [image, setImage] = useState(FirstScene)
+    const [data, setData] = useState('')
 
     socket.on('object_name', data => {
         console.log(data)
+
+        setData(data)
         
         if (data === "hack the north")
         {
@@ -51,7 +54,9 @@ const StoryPage = ({}) => {
     return(
         <div className='storyPage'>
             <IconView/>
-            <img className='image' src={image}/>
+                <div className='imageHolder'>
+                    <img className='image' src={image} key={data}/>
+                </div>
             <div className='button'>
                 <LinkButtonView to='/home'>
                     Back to Home

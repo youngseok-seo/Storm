@@ -22,14 +22,24 @@
     margin-top: 40px;
 }
 
+.storyPage .imageHolder {
+    width: 550px;
+    height: 393px;
+
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .storyPage .image{
 
     width: 550px;
-    height: auto;
+    height: 393px;
     
-    margin-top: 40px;
-
-    animation: 2s appear; 
+    animation: 2s appear;  
 }
 
 @keyframes appear {
